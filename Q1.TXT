@@ -1,0 +1,32 @@
+Write a blog on Difference between HTTP1.1 vs HTTP2
+
+HTTP/1.1:
+
+
+
+Multiplexing: No multiplexing. One request per connection.
+
+Header Compression: Headers are not compressed, leading to higher overhead.
+
+Request Prioritization: No built-in support for request prioritization.
+
+Server Push: No native server push support.
+
+Binary Protocol: Text-based protocol, making it human-readable but less efficient.
+
+Persistent Connections: Connections are not persistent by default, leading to the overhead of repeatedly establishing connections.
+
+HTTP2:
+
+
+Multiplexing: Multiplexing allows multiple requests and responses to be sent in parallel over a single connection.
+
+Header Compression: Efficient header compression (HPACK) significantly reduces header size, improving performance.
+
+Request Prioritization: Supports request prioritization, allowing the client to specify the importance of different resources.
+
+Server Push: Server push enables the server to send additional resources to the client before they are requested.
+
+Binary Protocol: Binary protocol for faster parsing and reduced complexity in data transfer.
+
+Persistent Connections: Persistent connections are the default, reducing latency by reusing the same connection for multiple requests.

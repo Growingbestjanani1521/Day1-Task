@@ -1,0 +1,52 @@
+Write a blog about objects and its internal representation in Javascript?
+
+Key-Value Pairs: 
+
+Objects in JavaScript are collections of key-value pairs.
+ Each key (also called a property) is a string or a symbol, and each key is associated with a value. 
+The value can be of any data type, including other objects.
+
+Properties:
+
+ Properties are the keys in an object. 
+They are used to access the corresponding values. 
+Properties can be added, modified, or deleted from an object dynamically.
+
+Object Prototype: 
+
+Every object in JavaScript is linked to a prototype object. 
+This prototype object defines a set of default properties and methods that the object inherits.
+ You can think of the prototype as a template for objects.
+
+ Object Construction: 
+ 
+ Objects can be created in several ways in JavaScript. 
+ The most common methods are using object literals (e.g., { key: value }), constructor functions (e.g., new Object()).
+
+ Object Methods: 
+
+ JavaScript provides built-in methods for objects, such as Object.keys(), Object.values(), and Object.entries() to work
+  with object properties and values.Objects also have methods for common operations, like toString() and hasOwnProperty(),
+ available through their prototype.
+
+ // Creating an object using an object literal
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 30,
+  greet: function() {
+    console.log(`Hello, my name is ${this.firstName} ${this.lastName}.`);
+  }
+};
+
+// Accessing object properties
+console.log(person.firstName); // Output: "John"
+
+// Adding a new property
+person.email = "john@example.com";
+
+// Object prototype
+console.log(Object.getPrototypeOf(person)); // Output: Object {}
+
+// Object methods
+console.log(Object.keys(person)); // Output: ["firstName", "lastName", "age", "greet", "email"]
