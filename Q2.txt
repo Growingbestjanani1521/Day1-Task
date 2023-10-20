@@ -29,10 +29,10 @@ This prototype object defines a set of default properties and methods that the o
   with object properties and values.Objects also have methods for common operations, like toString() and hasOwnProperty(),
  available through their prototype.
 
- // Creating an object using an object literal
+ 
 const person = {
-  firstName: "John",
-  lastName: "Doe",
+  firstName: "Janani",
+  lastName: "mani",
   age: 30,
   greet: function() {
     console.log(`Hello, my name is ${this.firstName} ${this.lastName}.`);
@@ -40,10 +40,10 @@ const person = {
 };
 
 // Accessing object properties
-console.log(person.firstName); // Output: "John"
+console.log(person.firstName); // Output: "Janani"
 
 // Adding a new property
-person.email = "john@example.com";
+person.email = "jananimani1590@gmail.com";
 
 // Object prototype
 console.log(Object.getPrototypeOf(person)); // Output: Object {}

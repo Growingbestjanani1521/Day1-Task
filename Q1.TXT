@@ -2,8 +2,6 @@ Write a blog on Difference between HTTP1.1 vs HTTP2
 
 HTTP/1.1:
 
-
-
 Multiplexing: No multiplexing. One request per connection.
 
 Header Compression: Headers are not compressed, leading to higher overhead.
@@ -17,7 +15,6 @@ Binary Protocol: Text-based protocol, making it human-readable but less efficien
 Persistent Connections: Connections are not persistent by default, leading to the overhead of repeatedly establishing connections.
 
 HTTP2:
-
 
 Multiplexing: Multiplexing allows multiple requests and responses to be sent in parallel over a single connection.
 
